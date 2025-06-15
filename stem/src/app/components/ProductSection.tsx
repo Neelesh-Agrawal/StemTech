@@ -5,45 +5,65 @@ import InquireWhatsAppButton from './InquireWhatsAppButton';
 
 const ProductsSection: React.FC = () => {
   return (
-    <>
-      <b className={styles.ourProducts}>Our Products</b>
-      <div className={styles.exploreOurCuttingEdge}>
+    <section id="products" className={styles.productsSection}>
+      <h2 className={styles.ourProducts}>Our Products</h2>
+      <p className={styles.exploreOurCuttingEdge}>
         Explore our cutting-edge robotics and IoT solutions designed for the next generation of engineers and educators.
-      </div>
-      <div className={styles.rectangleContainer}>
-        <div className={styles.groupInner} />
-        <div className={styles.groupDiv}>
-          <div className={styles.groupChild1} />
+      </p>
+
+      <div className={styles.productCardsContainer}>
+        <div className={styles.productCard}>
+          <div className={styles.productImageContainer}>
+            <Image 
+              className={styles.productImage}
+              width={417}
+              height={301}
+              alt="Embedded Control System"
+              src="/robo1.png"
+              quality={100}
+              priority
+            />
+          </div>
+          <h3 className={styles.productTitle}>Embedded Control System</h3>
+          <p className={styles.productDescription}>Advanced control systems for automation</p>
           <InquireWhatsAppButton text="Inquire on WhatsApp" />
-          <Image className={styles.vectorIcon2} width={17} height={18} alt="" src="/whatsapp.svg" />
         </div>
-        <b className={styles.embeddedControlSystem}>Embedded Control System</b>
-        <div className={styles.advancedControlSystems}>Advanced control systems for automation</div>
-        <Image className={styles.pic1RemovebgPreview1Icon} width={417} height={301} alt="" src="/robo1.png" />
-      </div>
-      <div className={styles.rectangleParent1}>
-        <div className={styles.groupInner} />
-        <div className={styles.groupDiv}>
-          <div className={styles.groupChild1} />
+
+        <div className={styles.productCard}>
+          <div className={styles.productImageContainer}>
+            <Image 
+              className={styles.productImage}
+              width={417}
+              height={302}
+              alt="STEMTEC IoT Development Kit"
+              src="/board.png"
+              quality={100}
+              priority
+            />
+          </div>
+          <h3 className={styles.productTitle}>STEMTEC IoT Development Kit</h3>
+          <p className={styles.productDescription}>Advanced control systems for automation</p>
           <InquireWhatsAppButton text="Inquire on WhatsApp" />
-          <Image className={styles.vectorIcon3} width={17} height={18} alt="" src="/whatsapp.svg" />
         </div>
-        <b className={styles.embeddedControlSystem}>STEMTEC IoT Development Kit</b>
-        <div className={styles.advancedControlSystems}>Advanced control systems for automation</div>
-        <Image className={styles.boardRemovebgPreview1Icon} width={417} height={302} alt="" src="/board.png" />
-      </div>
-      <div className={styles.rectangleParent3}>
-        <div className={styles.groupInner} />
-        <div className={styles.groupDiv}>
-          <div className={styles.groupChild1} />
+
+        <div className={styles.productCard}>
+          <div className={styles.productImageContainer}>
+            <Image 
+              className={styles.productImage}
+              width={303}
+              height={301}
+              alt="STEMTEC IoT Development Kit 2"
+              src="/robo2.png"
+              quality={100}
+              priority
+            />
+          </div>
+          <h3 className={styles.productTitle}>STEMTEC IoT Development Kit</h3>
+          <p className={styles.productDescription}>Advanced control systems for automation</p>
           <InquireWhatsAppButton text="Inquire on WhatsApp" />
-          <Image className={styles.vectorIcon3} width={17} height={18} alt="" src="/whatsapp.svg" />
         </div>
-        <b className={styles.stemtecIotDevelopment1}>STEMTEC IoT Development Kit</b>
-        <div className={styles.advancedControlSystems}>Advanced control systems for automation</div>
-        <Image className={styles.roboThumbnail1Icon} width={303} height={301} alt="" src="/robo2.png" />
       </div>
-    </>
+    </section>
   );
 };
 

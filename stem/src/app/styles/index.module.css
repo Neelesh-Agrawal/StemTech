@@ -1,1245 +1,1725 @@
-.greenIcon {
-    filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%);
-  }
-
-.stemtecAi {
-    position: absolute;
-    top: 26px;
-    left: 108px;
+/* Reset and base styles */
+:global(*) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.stemtechLogoRemovebgPreviewIcon {
-    position: absolute;
-    top: 13px;
-    left: 25px;
+
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbarContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.logoContainer:hover {
+  opacity: 0.8;
+}
+
+.stemtechLogo {
     width: 63px;
     height: 63px;
-    object-fit: cover;
-}
-.products {
-    position: absolute;
-    top: 1px;
-    left: 121px;
-    display: inline-block;
-    width: 65px;
-    height: 19px;
-}
-.home {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: inline-block;
-    width: 44px;
-    height: 19px;
-}
-.about {
-    position: absolute;
-    top: 1px;
-    left: 61px;
-    display: inline-block;
-    width: 43px;
-    height: 19px;
-}
-.solutions {
-    position: absolute;
-    top: 0px;
-    left: 487px;
-    display: inline-block;
-    width: 67px;
-    height: 19px;
-}
-.contact {
-    position: absolute;
-    top: 0px;
-    left: 571px;
-    display: inline-block;
-    width: 56px;
-    height: 19px;
-}
-.keyProduct {
-    position: absolute;
-    top: 0px;
-    left: 203px;
-}
-.technicalSpecification {
-    position: absolute;
-    top: 0px;
-    left: 305px;
-}
-.productsParent {
-    position: absolute;
-    top: 33px;
-    left: 794px;
-    width: 627px;
-    height: 20px;
-    font-size: 16px;
-    color: #374151;
-}
-.stemtecAiRoboticsParent {
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 720px);
-    background-color: #fff;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 1440px;
-    height: 89px;
-    overflow: hidden;
-    font-size: 30px;
-}
-.desktop11Child {
-    position: absolute;
-    top: 89px;
-    left: 0px;
-    background: linear-gradient(254.37deg, #132530 12%, #152e42 85%);
-    width: 1440px;
-    height: 859px;
-}
-.desktop11Item {
-    position: absolute;
-    top: 1793px;
-    left: 0px;
-    background-color: #f9fafb;
-    width: 1440px;
-    height: 859px;
-}
-.desktop11Inner {
-    position: absolute;
-    top: 2652px;
-    left: 0px;
-    background-color: #fff;
-    width: 1440px;
-    height: 583px;
-}
-.rectangleDiv {
-    position: absolute;
-    top: 3818px;
-    left: 3px;
-    background-color: #fff;
-    width: 1440px;
-    height: 583px;
-}
-.desktop11Child1 {
-    position: absolute;
-    top: 3235px;
-    left: 0px;
-    background-color: #f9fafb;
-    width: 1440px;
-    height: 583px;
-}
-.desktop11Child2 {
-    position: absolute;
-    top: 4401px;
-    left: 3px;
-    background-color: #f9fafb;
-    width: 1440px;
-    height: 725px;
-}
-.backgroundRemovebgPreviewPiIcon {
-    position: absolute;
-    top: 153px;
-    left: 271px;
-    width: 1224px;
-    height: 754px;
-    object-fit: contain;
-}
-.weBuildIntelligent {
-    position: absolute;
-    top: 464px;
-    left: 56px;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: Inter;
-    color: #dbdbdb;
-    display: inline-block;
-    width: 558px;
-}
-.empoweringFutureInnovators {
-    position: absolute;
-    top: 396px;
-    left: 56px;
-    font-size: 40px;
-    font-weight: 800;
-    font-family: Inter;
-    color: #fff;
-}
-.exploreProducts {
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 62px);
-}
-.button {
-    position: absolute;
-    top: 556px;
-    left: 56px;
-    border-radius: 8px;
-    background-color: #059669;
-    width: 230px;
-    height: 48px;
-    color: #fff;
-}
-.aboutUs {
-    position: absolute;
-    top: 986px;
-    left: calc(50% - 74px);
-    font-size: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    width: 149px;
-    height: 42px;
-}
-.imgIcon {
-    position: absolute;
-    top: 1122px;
-    left: 39px;
-    border-radius: 8px;
-    width: 592px;
-    height: 592px;
-    object-fit: cover;
-}
-.leadingInnovationIn {
-    position: absolute;
-    top: 1160px;
-    left: 720px;
-    font-size: 24px;
-    line-height: 24px;
-    display: inline-block;
-    width: 333px;
-    height: 28px;
-}
-.blankLine {
-    margin: 0;
-}
-.foundedIn2020Container {
-    position: absolute;
-    top: 1207px;
-    left: 720px;
-    line-height: 23px;
-    display: inline-block;
-    width: 576px;
-}
-.groupChild {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: #f3ffef;
-    width: 284px;
-    height: 114px;
-}
-.vectorIcon {
-    position: absolute;
-    height: 26.93%;
-    width: 13.2%;
-    top: 9.42%;
-    right: 81.87%;
-    bottom: 63.65%;
-    left: 4.93%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.advancedRobotics {
-    position: absolute;
-    top: 52px;
-    left: 14px;
-    display: inline-block;
-    width: 139px;
-    height: 19px;
-}
-.stateOfTheArtRoboticSolut {
-    position: absolute;
-    top: 84px;
-    left: 14px;
-    font-size: 14px;
-    color: #4b5563;
-    display: inline-block;
-    width: 202px;
-    height: 16px;
-}
-.rectangleParent {
-    position: absolute;
-    top: 1487px;
-    left: 720px;
-    width: 284px;
-    height: 114px;
-}
-.vectorIcon1 {
-    position: absolute;
-    height: 26.93%;
-    width: 10.56%;
-    top: 11.11%;
-    right: 82.39%;
-    bottom: 61.96%;
-    left: 7.04%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.embeddedSystems {
-    position: absolute;
-    top: 54.25px;
-    left: 20px;
-    display: inline-block;
-    width: 143px;
-    height: 19px;
-}
-.customEmbeddedSolutions {
-    position: absolute;
-    top: 86.25px;
-    left: 20px;
-    font-size: 14px;
-    color: #4b5563;
-    display: inline-block;
-    width: 180px;
-    height: 16px;
-}
-.rectangleGroup {
-    position: absolute;
-    top: 1487px;
-    left: 1040px;
-    width: 284px;
-    height: 114px;
-}
-.ourProducts {
-    position: absolute;
-    top: 1846px;
-    left: calc(50% - 107px);
-    font-size: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    width: 214px;
-    height: 42px;
-}
-.exploreOurCuttingEdge {
-    position: absolute;
-    top: 1917px;
-    left: calc(50% - 504px);
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 500;
-    color: #5b5b5b;
-}
-.groupInner {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #fff;
-    border: 1px solid #000;
-    box-sizing: border-box;
-    width: 416.7px;
-    height: 469px;
-}
-.groupChild1 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #10b981;
-    width: 207.5px;
-    height: 39.8px;
-}
-.inquireOnWhatsapp {
-    position: absolute;
-    top: calc(50% - 9.06px);
-    left: calc(50% - 61.99px);
-}
-.vectorIcon2 {
-    position: absolute;
-    width: 8.39%;
-    top: calc(50% - 8.06px);
-    right: 83.54%;
-    left: 8.08%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 17.7px;
-}
-.groupDiv {
-    position: absolute;
-    top: 385.16px;
-    left: 23.24px;
-    width: 207.5px;
-    height: 39.8px;
-}
-.embeddedControlSystem {
-    position: absolute;
-    top: 313.77px;
-    left: 23.24px;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000;
-}
-.advancedControlSystems {
-    position: absolute;
-    top: 343.66px;
-    left: 23.24px;
-    line-height: 16px;
-    color: #4b5563;
-    display: inline-block;
-    width: 309.6px;
-    height: 13.3px;
-}
-.pic1RemovebgPreview1Icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    width: 416.7px;
-    height: 301.3px;
-    object-fit: cover;
-}
-.rectangleContainer {
-    position: absolute;
-    top: 2070px;
-    left: 55px;
-    width: 416.7px;
-    height: 469px;
-    color: #fff;
-}
-.inquireOnWhatsapp1 {
-    position: absolute;
-    top: calc(50% - 9.06px);
-    left: calc(50% - 61.43px);
-}
-.vectorIcon3 {
-    position: absolute;
-    width: 8.39%;
-    top: calc(50% - 9.06px);
-    right: 84.02%;
-    left: 7.59%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    height: 17.7px;
-}
-.boardRemovebgPreview1Icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 417px;
-    height: 302px;
-    object-fit: cover;
-}
-.rectangleParent1 {
-    position: absolute;
-    top: 2069px;
-    left: 511px;
-    width: 417px;
-    height: 469px;
-    color: #fff;
-}
-.stemtecIotDevelopment1 {
-    position: absolute;
-    top: 314px;
-    left: 23px;
-    font-size: 20px;
-    line-height: 20px;
-    color: #000;
-}
-.roboThumbnail1Icon {
-    position: absolute;
-    top: 3px;
-    left: calc(50% - 151.35px);
-    width: 303px;
-    height: 301px;
-    object-fit: cover;
-}
-.rectangleParent3 {
-    position: absolute;
-    top: 2069px;
-    left: 967px;
-    width: 416.7px;
-    height: 469px;
-    color: #fff;
-}
-.ourKeyProducts {
-    position: absolute;
-    top: 2710px;
-    left: calc(50% - 141px);
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
-}
-.innovativeSolutionsDesigned {
-    position: absolute;
-    top: 2767px;
-    left: calc(50% - 421px);
-    font-size: 20px;
-    line-height: 36px;
-    color: #303030;
-    text-align: center;
-}
-.groupChild6 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #f3ffef;
-    width: 366px;
-    height: 218px;
-}
-.vectorIcon5 {
-    position: absolute;
-    height: 16.88%;
-    width: 9.84%;
-    top: 10.22%;
-    right: 83.61%;
-    bottom: 72.9%;
-    left: 6.56%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.iotDevelopmentBoards {
-    position: absolute;
-    top: 80px;
-    left: 24px;
-}
-.versatileBoardsFor {
-    position: absolute;
-    top: 118px;
-    left: 24px;
-    font-size: 16px;
-    color: #4b5563;
-    display: inline-block;
-    width: 278px;
-}
-.rectangleParent5 {
-    position: absolute;
-    top: 2918px;
-    left: 536px;
-    width: 366px;
-    height: 218px;
-    font-size: 20px;
-}
-.groupChild7 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #f3ffef;
-    width: 365px;
-    height: 218px;
-}
-.vectorIcon6 {
-    position: absolute;
-    height: 17.8%;
-    width: 8.77%;
-    top: 10.6%;
-    right: 84.66%;
-    bottom: 71.6%;
-    left: 6.58%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.academicResearchKits {
-    position: absolute;
-    top: 79px;
-    left: 24px;
-}
-.industry40Training {
-    position: absolute;
-    top: 116px;
-    left: 24px;
-    font-size: 16px;
-    color: #4b5563;
-    display: inline-block;
-    width: 310px;
-}
-.rectangleParent6 {
-    position: absolute;
-    top: 2918px;
-    left: 948px;
-    width: 365px;
-    height: 218px;
-    font-size: 20px;
-}
-.vectorIcon7 {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    width: 37.5px;
-    height: 30px;
-}
-.stemLearningRobots {
-    position: absolute;
-    top: 82px;
-    left: 24px;
-}
-.interactiveRobotsDesigned {
-    position: absolute;
-    top: 122px;
-    left: 24px;
-    font-size: 16px;
-    color: #4b5563;
-    display: inline-block;
-    width: 279px;
-}
-.rectangleParent7 {
-    position: absolute;
-    top: 2918px;
-    left: 125px;
-    width: 365px;
-    height: 218px;
-    font-size: 20px;
-}
-.technicalSpecifications {
-    position: absolute;
-    top: 3278px;
-    left: calc(50% - 199px);
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
-}
-.ourFlagshipStemtecX1 {
-    position: absolute;
-    top: 3322px;
-    left: calc(50% - 403px);
-    line-height: 36px;
-    color: #303030;
-    text-align: center;
-}
-.groupChild9 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #f3ffef;
-    width: 416px;
-    height: 117px;
-}
-.vectorIcon8 {
-    position: absolute;
-    top: 30px;
-    left: 26px;
-    border-radius: 12px;
-    width: 17px;
-    height: 25px;
-}
-.power {
-    position: absolute;
-    top: 30px;
-    left: 64px;
-}
-.vDc2a {
-    position: absolute;
-    top: 77px;
-    left: 26px;
-    font-size: 20px;
-}
-.rectangleParent8 {
-    position: absolute;
-    top: 3592px;
-    left: 66px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.vectorIcon9 {
-    position: absolute;
-    height: 31.45%;
-    width: 8.65%;
-    top: 25.64%;
-    right: 85.58%;
-    bottom: 42.91%;
-    left: 5.77%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.processor {
-    position: absolute;
-    top: 30px;
-    left: 75px;
-}
-.rectangleParent9 {
-    position: absolute;
-    top: 3432px;
-    left: 66px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.groupIcon {
-    position: absolute;
-    height: 20.94%;
-    width: 9.62%;
-    top: 26.01%;
-    right: 84.13%;
-    bottom: 53.05%;
-    left: 6.25%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.batteryLife {
-    position: absolute;
-    top: 30px;
-    left: 86px;
-}
-.rectangleParent10 {
-    position: absolute;
-    top: 3432px;
-    left: 511px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.vectorIcon10 {
-    position: absolute;
-    height: 25.3%;
-    width: 8.17%;
-    top: 25.17%;
-    right: 85.58%;
-    bottom: 49.54%;
-    left: 6.25%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.dimensions {
-    position: absolute;
-    top: 30px;
-    left: 81px;
-}
-.rectangleParent11 {
-    position: absolute;
-    top: 3592px;
-    left: 511px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.vectorIcon11 {
-    position: absolute;
-    height: 26.24%;
-    width: 8.41%;
-    top: 26.84%;
-    right: 85.34%;
-    bottom: 46.92%;
-    left: 6.25%;
-    border-radius: 12px;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.rectangleParent12 {
-    position: absolute;
-    top: 3432px;
-    left: 956px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.groupIcon1 {
-    position: absolute;
-    height: 20.94%;
-    width: 6.73%;
-    top: 25.99%;
-    right: 87.02%;
-    bottom: 53.07%;
-    left: 6.25%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.motorControl {
-    position: absolute;
-    top: 30px;
-    left: 71px;
-}
-.rectangleParent13 {
-    position: absolute;
-    top: 3592px;
-    left: 956px;
-    width: 416px;
-    height: 117px;
-    font-size: 24px;
-}
-.ourSolutions {
-    position: absolute;
-    top: 3875px;
-    left: calc(50% - 137px);
-    font-size: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    width: 221px;
-    height: 42px;
-}
-.comprehensiveSolutionsTailor {
-    position: absolute;
-    top: 3929px;
-    left: calc(50% - 386px);
-    line-height: 36px;
-    text-align: center;
-}
-.groupChild15 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #f3ffef;
-    width: 550px;
-    height: 276px;
-}
-.completeStemCurriculum {
-    margin-bottom: 0px;
-}
-.completeStemCurriculumPacka {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    padding-left: 27px;
-}
-.completeStemCurriculumContainer {
-    position: absolute;
-    top: 86px;
-    left: 8px;
-    line-height: 150%;
-}
-.educationSolutions {
-    position: absolute;
-    top: 37px;
-    left: 26px;
-    font-size: 24px;
-}
-.rectangleParent14 {
-    position: absolute;
-    top: 4022px;
-    left: 115px;
-    width: 550px;
-    height: 276px;
-    font-size: 20px;
-}
-.industrySolutions {
-    position: absolute;
-    top: 37px;
-    left: 26px;
-}
-.industry40TrainingContainer {
-    position: absolute;
-    top: 86px;
-    left: 8px;
-    font-size: 20px;
-    line-height: 157.19%;
-}
-.rectangleParent15 {
-    position: absolute;
-    top: 4022px;
-    left: 721px;
-    width: 550px;
-    height: 276px;
-    font-size: 24px;
-}
-.contactUs {
-    position: absolute;
-    top: 4448px;
-    left: calc(50% - 89px);
-    font-size: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    width: 178px;
-    height: 42px;
-}
-.groupChild17 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 12px;
-    background-color: #fff;
-    width: 432px;
-    height: 518px;
-}
-.getInTouch {
-    position: absolute;
-    top: 34px;
-    left: 32px;
-    font-size: 24px;
-    display: inline-block;
-    color: #000;
-    width: 135px;
-    height: 28px;
-}
-.name {
-    position: absolute;
-    top: 90px;
-    left: 32px;
-    display: inline-block;
-    width: 43px;
-    height: 19px;
-}
-.input {
-    position: absolute;
-    top: 120px;
-    left: 32px;
-    border-radius: 8px;
-    background-color: #fff;
-    border: 1px solid #e5e7eb;
-    box-sizing: border-box;
-    width: 368px;
-    height: 42px;
-}
-.email {
-    position: absolute;
-    top: 180px;
-    left: 32px;
-    display: inline-block;
-    width: 40px;
-    height: 19px;
-}
-.input1 {
-    position: absolute;
-    top: 210px;
-    left: 32px;
-    border-radius: 8px;
-    background-color: #fff;
-    border: 1px solid #e5e7eb;
-    box-sizing: border-box;
-    width: 368px;
-    height: 42px;
-}
-.message {
-    position: absolute;
-    top: 270px;
-    left: 32px;
-    display: inline-block;
-    width: 66px;
-    height: 19px;
-}
-.textarea {
-    position: absolute;
-    top: 300px;
-    left: 32px;
-    border-radius: 8px;
-    background-color: #fff;
-    border: 1px solid #e5e7eb;
-    box-sizing: border-box;
-    width: 368px;
-    height: 114px;
-    overflow: hidden;
-}
-.groupChild18 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 8px;
-    background-color: #059669;
-    width: 153px;
-    height: 42px;
-}
-.sendMessage {
-    position: absolute;
-    top: 12px;
-    left: 24px;
-    display: inline-block;
-    width: 105px;
-    height: 19px;
-}
-.rectangleParent17 {
-    position: absolute;
-    top: 428px;
-    left: 32px;
-    width: 153px;
-    height: 42px;
-    text-align: center;
-    color: #fff;
-}
-.rectangleParent16 {
-    position: absolute;
-    top: 4537px;
-    left: 275px;
-    width: 432px;
-    height: 518px;
-    color: #374151;
-}
-.contactInformation {
-    position: absolute;
-    top: 34px;
-    left: 32px;
-    font-size: 24px;
-    display: inline-block;
-    width: 217px;
-    height: 28px;
-}
-.vectorIcon12 {
-    position: absolute;
-    height: 4.73%;
-    width: 4.17%;
-    top: 16.81%;
-    right: 88.66%;
-    bottom: 78.46%;
-    left: 7.18%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.vitChennaiKelambakkam {
-    position: absolute;
-    top: 84px;
-    left: 67px;
-    line-height: 16px;
-    display: inline-block;
-    width: 297px;
-}
-.vectorIcon13 {
-    position: absolute;
-    height: 3.17%;
-    width: 3.7%;
-    top: 26.68%;
-    right: 88.89%;
-    bottom: 70.16%;
-    left: 7.41%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.div {
-    position: absolute;
-    top: 139px;
-    left: 70px;
-    line-height: 16px;
-    display: inline-block;
-    width: 132px;
-    height: 19px;
-}
-.vectorIcon14 {
-    position: absolute;
-    height: 2.37%;
-    width: 3.7%;
-    top: 34.96%;
-    right: 88.89%;
-    bottom: 62.66%;
-    left: 7.41%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.adminstemtechin {
-    position: absolute;
-    top: 178px;
-    left: 68px;
-    line-height: 16px;
-    display: inline-block;
-    width: 168px;
-    height: 19px;
-}
-.followUs {
-    position: absolute;
-    top: 226px;
-    left: 32px;
-    line-height: 16px;
-    display: inline-block;
-    width: 70px;
-    height: 19px;
-}
-.vectorIcon15 {
-    position: absolute;
-    height: 4.15%;
-    width: 4.86%;
-    top: 51.83%;
-    right: 87.73%;
-    bottom: 44.02%;
-    left: 7.41%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.rectangleParent18 {
-    position: absolute;
-    top: 4537px;
-    left: 739px;
-    width: 432px;
-    height: 518px;
-}
-.stemtchAi {
-    position: absolute;
-    top: 5128px;
-    left: 83px;
-    font-size: 20px;
-    line-height: 20px;
-    color: #fff;
-}
-.leadingTheFuture {
-    position: absolute;
-    top: 5175px;
-    left: 83px;
-    line-height: 16px;
-    display: inline-block;
-    width: 268px;
-}
-.quickLinks {
-    position: absolute;
-    top: 5128px;
-    left: 403px;
-    font-size: 20px;
-    line-height: 20px;
-    display: inline-block;
-    color: #fff;
-    width: 105px;
-    height: 24px;
-}
-.home1 {
-    position: absolute;
-    top: 5172px;
-    left: 403px;
-    display: inline-block;
-    width: 44px;
-    height: 19px;
-}
-.about1 {
-    position: absolute;
-    top: 5204px;
-    left: 403px;
-    display: inline-block;
-    width: 43px;
-    height: 19px;
-}
-.products1 {
-    position: absolute;
-    top: 5236px;
-    left: 403px;
-    display: inline-block;
-    width: 65px;
-    height: 19px;
-}
-.solutions1 {
-    position: absolute;
-    top: 5268px;
-    left: 403px;
-    display: inline-block;
-    width: 67px;
-    height: 19px;
-}
-.products2 {
-    position: absolute;
-    top: 5128px;
-    left: 723px;
-    font-size: 20px;
-    line-height: 20px;
-    display: inline-block;
-    color: #fff;
-    width: 82px;
-    height: 24px;
-}
-.industrialRobots {
-    position: absolute;
-    top: 5172px;
-    left: 723px;
-    line-height: 16px;
-    display: inline-block;
-    width: 122px;
-    height: 19px;
-}
-.embeddedSystems1 {
-    position: absolute;
-    top: 5204px;
-    left: 723px;
-    line-height: 16px;
-    display: inline-block;
-    width: 142px;
-    height: 19px;
-}
-.controlUnits {
-    position: absolute;
-    top: 5236px;
-    left: 723px;
-    line-height: 16px;
-    display: inline-block;
-    width: 93px;
-    height: 19px;
-}
-.customSolutions {
-    position: absolute;
-    top: 5268px;
-    left: 723px;
-    line-height: 16px;
-    display: inline-block;
-    width: 127px;
-    height: 19px;
-}
-.newsletter {
-    position: absolute;
-    top: 5128px;
-    left: 1043px;
-    font-size: 20px;
-    line-height: 20px;
-    display: inline-block;
-    color: #fff;
-    width: 98px;
-    height: 24px;
-}
-.subscribeToOur {
-    position: absolute;
-    top: 5172px;
-    left: 1043px;
-    line-height: 16px;
-    display: inline-block;
-    width: 281px;
-    height: 19px;
-}
-.yourEmail {
-    position: absolute;
-    top: 0px;
-    left: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    width: 76px;
-    height: 40px;
-}
-.input2 {
-    position: absolute;
-    top: 5210px;
-    left: 1043px;
-    border-radius: 8px 0px 0px 8px;
-    background-color: #fff;
-    width: 184.5px;
-    height: 40px;
-    color: #adaebc;
-}
-.subscribe {
-    position: absolute;
-    top: 10px;
-    left: 16px;
-    display: inline-block;
-    width: 71px;
-    height: 19px;
-}
-.button1 {
-    position: absolute;
-    top: 5210px;
-    left: 1227.53px;
-    border-radius: 0px 8px 8px 0px;
-    background-color: #2563eb;
-    width: 103.5px;
-    height: 40px;
-    text-align: center;
-    color: #fff;
-}
-.stemtecAi1 {
-    position: absolute;
-    top: 5340px;
-    left: 523px;
-    line-height: 16px;
-    text-align: center;
-}
-.desktop11 {
-    width: 100%;
-    position: relative;
-    background-color: #fff;
-    height: 5386px;
-    overflow: hidden;
-    text-align: left;
-    font-size: 16px;
-    color: #000;
-    font-family: Roboto;
+  object-fit: contain;
 }
 
+.stemtecAi {
+  font-size: 24px;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 16px;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+.navLink::after {
+  content: '';
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #059669;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  width: 100%;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #059669;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #374151;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+    position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #374151;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+.hamburger.active {
+  background-color: transparent;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Hero Section Styles */
+.heroSection {
+  background-color: #132530; /* Dark blue background from screenshot */
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.heroText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.empoweringFutureInnovators {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.weBuildIntelligent {
+    font-size: 20px;
+    font-weight: 600;
+  line-height: 1.5;
+    color: #dbdbdb;
+  margin-bottom: 40px;
+}
+
+.exploreProductsButton {
+  background-color: #059669;
+    color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exploreProductsButton:hover {
+  background-color: #047857;
+}
+
+.heroImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  max-width: 800px; /* Increased from 700px */
+  height: 100%;
+  min-height: 600px; /* Added to ensure container is tall enough */
+}
+
+.backgroundRemovebgPreviewPiIcon {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  right: -50px; /* Reduced from -100px to better position the larger image */
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+  transform: scale(1.1); /* Added to make the image slightly larger */
+}
+
+/* About Section Styles */
+.aboutSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutUs {
+    text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #374151;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.aboutImage {
+  flex: 1;
+  position: relative;
+  aspect-ratio: 1;
+  max-width: 592px;
+  margin: 0 auto;
+}
+
+.imgIcon {
+  width: 100%;
+  height: 100%;
+    object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aboutText {
+  flex: 1;
+  max-width: 600px;
+}
+
+.leadingInnovationIn {
+    font-size: 24px;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.foundedIn2020Container {
+  line-height: 1.6;
+  color: #4B5563;
+}
+
+.foundedIn2020Container p {
+  margin-bottom: 20px;
+}
+
+/* About Section Card Styles */
+.aboutCardsContainer {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center cards when wrapped */
+}
+
+.aboutCard {
+  flex: 1;
+  min-width: 280px; /* Minimum width for cards before wrapping */
+  background-color: #f3ffef; /* Light green background */
+  border-radius: 8px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to start */
+  gap: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and title */
+  margin-bottom: 10px; /* Space between header and description */
+}
+
+.cardIcon {
+  filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%); /* Green tint */
+  margin-bottom: 0; /* Removed to prevent extra space */
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 0; /* Removed to prevent extra space */
+}
+
+.cardDescription {
+    font-size: 14px;
+  color: #4B5563;
+  line-height: 1.4;
+}
+
+/* Products Section Styles */
+.productsSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f9fafb; /* Light background from screenshot */
+  text-align: center;
+}
+
+.ourProducts {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.exploreOurCuttingEdge {
+  font-size: 18px;
+  color: #4B5563;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.productCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.productCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.productCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.productImageContainer {
+  width: 100%;
+  height: 200px; /* Fixed height for image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.productImage {
+    max-width: 100%;
+    max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.productTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.productDescription {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  flex-grow: 1; /* Allows description to take up available space */
+}
+
+/* InquireWhatsAppButton styles from screenshot */
+.inquireWhatsAppButton {
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.inquireWhatsAppButton:hover {
+  background-color: #1ea14e;
+  transform: translateY(-2px);
+}
+
+.whatsappIcon {
+  filter: brightness(0) invert(1); /* Makes SVG white */
+}
+
+/* Our Key Products Section Styles */
+.keyProductsSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff; /* White background from screenshot */
+  text-align: center;
+}
+
+.ourKeyProducts {
+    font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.innovativeSolutionsDesigned {
+  font-size: 18px;
+  color: #4B5563;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.keyProductCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.keyProductCard {
+  background-color: #f3ffef; /* Light green background */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.keyProductCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.keyProductIcon {
+  filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%); /* Green tint */
+  margin-bottom: 20px;
+  width: 40px; /* Consistent icon size */
+  height: 40px;
+}
+
+.keyProductCardTitle {
+    font-size: 20px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.keyProductCardDescription {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.4;
+}
+
+/* Technical Specifications Section Styles */
+.technicalSpecificationsSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #f9fafb; /* Light background from screenshot */
+  text-align: center;
+}
+
+.technicalSpecifications {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.ourFlagshipStemtecX1 {
+  font-size: 18px;
+  color: #4B5563;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.specsGridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.specCard {
+  background-color: #fff;
+    border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.specCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.specIcon {
+  filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%); /* Green tint */
+  margin-bottom: 20px;
+  width: 40px; /* Consistent icon size */
+  height: 40px;
+  object-fit: contain;
+}
+
+.specTitle {
+    font-size: 20px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.specDescription {
+  font-size: 15px;
+  color: #4B5563;
+  line-height: 1.4;
+}
+
+/* Solutions Section Styles */
+.solutionsSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff; /* White background from screenshot */
+  text-align: center;
+}
+
+.ourSolutions {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.comprehensiveSolutionsTailor {
+  font-size: 18px;
+  color: #4B5563;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.solutionsCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  text-align: left;
+}
+
+.solutionCard {
+  background-color: #f3ffef; /* Light green background */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solutionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.solutionCardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+.solutionList {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.solutionList li {
+  font-size: 16px;
+  color: #4B5563;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.solutionList li::before {
+  content: '\2713'; /* Checkmark icon */
+  color: #059669; /* Green color for checkmark */
+  font-weight: bold;
+    position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Contact Section Styles */
+.contactSection {
+  padding: 100px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff; /* White background from screenshot */
+  text-align: center;
+}
+
+.contactUs {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #374151;
+}
+
+.contactContent {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px; /* Adjust based on screenshot */
+  background-color: #fff;
+    border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.getInTouch,
+.contactInformation,
+.followUs {
+  font-size: 24px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 25px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 15px;
+  color: #4B5563;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #374151;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #059669;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.2);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.sendMessageButton {
+  background-color: #059669;
+    color: #fff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.sendMessageButton:hover {
+  background-color: #047857;
+  transform: translateY(-2px);
+}
+
+.formStatus {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #059669;
+  text-align: center;
+}
+
+.contactInfo {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px; /* Adjust based on screenshot */
+  background-color: #fff;
+    border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  border: 1px solid #e5e7eb;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.infoIcon {
+  filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%); /* Green tint */
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.infoText {
+  font-size: 16px;
+  color: #4B5563;
+  line-height: 1.5;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.socialIcons a {
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-3px);
+}
+
+.socialIcon {
+  filter: invert(39%) sepia(84%) saturate(734%) hue-rotate(91deg) brightness(92%) contrast(92%); /* Green tint */
+  width: 28px; /* Slightly larger social icons */
+  height: 28px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a; /* Dark background from screenshot */
+  color: #d1d5db;
+  padding: 80px 20px 40px;
+  font-size: 15px;
+}
+
+.footerContent {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footerBrand {
+  flex: 2;
+  min-width: 250px;
+}
+
+.stemtecAiFooter {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+    color: #fff;
+  display: block;
+}
+
+.leadingTheFuture {
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+.footerLinks,
+.footerProducts,
+.footerNewsletter {
+  flex: 1;
+  min-width: 180px;
+}
+
+.quickLinks,
+.productsFooter,
+.newsletter {
+  font-size: 18px;
+  font-weight: 700;
+    color: #fff;
+  margin-bottom: 20px;
+}
+
+.footerList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerList li {
+  margin-bottom: 10px;
+}
+
+.footerLink {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #059669;
+}
+
+.subscribeToOur {
+  margin-bottom: 15px;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+.newsletterInputContainer {
+  display: flex;
+  border-radius: 8px;
+    overflow: hidden;
+  border: 1px solid #4b5563;
+  background-color: #374151;
+}
+
+.newsletterInput {
+  border: none;
+  padding: 12px 15px;
+  flex-grow: 1;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+}
+
+.newsletterInput:focus {
+  outline: none;
+}
+
+.newsletterInput::placeholder {
+  color: #9ca3af;
+}
+
+.subscribeButton {
+  background-color: #059669;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.subscribeButton:hover {
+  background-color: #047857;
+}
+
+.footerCopyright {
+  border-top: 1px solid #4b5563;
+  padding-top: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.stemtecAiCopyright {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .navbarContainer {
+    padding: 0 15px;
+  }
+
+  .navLinks {
+    gap: 20px;
+  }
+
+  .stemtecAi {
+    font-size: 20px;
+}
+
+  .aboutSection {
+    padding: 80px 15px;
+  }
+
+  .aboutContent {
+    gap: 30px;
+  }
+
+  .aboutImage {
+    max-width: 450px;
+  }
+
+  .empoweringFutureInnovators {
+    font-size: 40px;
+  }
+
+  .weBuildIntelligent {
+    font-size: 18px;
+  }
+
+  .heroContent {
+    gap: 30px;
+  }
+
+  .backgroundRemovebgPreviewPiIcon {
+    right: -50px; /* Adjust for smaller screens */
+  }
+
+  .aboutCardsContainer {
+    gap: 15px;
+  }
+
+  .aboutCard {
+    padding: 20px;
+    min-width: 250px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+  }
+
+  .cardDescription {
+    font-size: 13px;
+  }
+
+  .productsSection {
+    padding: 80px 15px;
+  }
+
+  .ourProducts {
+    font-size: 32px;
+  }
+
+  .exploreOurCuttingEdge {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .productCardsContainer {
+    gap: 25px;
+  }
+
+  .productCard {
+    padding: 25px;
+  }
+
+  .productTitle {
+    font-size: 20px;
+}
+
+  .productDescription {
+    font-size: 14px;
+  }
+
+  .keyProductsSection {
+    padding: 80px 15px;
+  }
+
+  .ourKeyProducts {
+    font-size: 32px;
+  }
+
+  .innovativeSolutionsDesigned {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .keyProductCardsContainer {
+    gap: 25px;
+  }
+
+  .keyProductCard {
+    padding: 25px;
+  }
+
+  .keyProductCardTitle {
+    font-size: 19px;
+  }
+
+  .keyProductCardDescription {
+    font-size: 14px;
+  }
+
+  .technicalSpecificationsSection {
+    padding: 80px 15px;
+  }
+
+.technicalSpecifications {
+    font-size: 32px;
+  }
+
+.ourFlagshipStemtecX1 {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .specsGridContainer {
+    gap: 25px;
+  }
+
+  .specCard {
+    padding: 25px;
+  }
+
+  .specTitle {
+    font-size: 19px;
+  }
+
+  .specDescription {
+    font-size: 14px;
+  }
+
+  .solutionsSection {
+    padding: 80px 15px;
+  }
+
+  .ourSolutions {
+    font-size: 32px;
+  }
+
+  .comprehensiveSolutionsTailor {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .solutionsCardsContainer {
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .solutionCard {
+    padding: 25px;
+  }
+
+  .solutionCardTitle {
+    font-size: 22px;
+  }
+
+  .solutionList li {
+    font-size: 15px;
+  }
+
+  .contactSection {
+    padding: 80px 15px;
+  }
+
+  .contactUs {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .contactContent {
+    gap: 30px;
+  }
+
+  .contactForm,
+  .contactInfo {
+    padding: 30px;
+  }
+
+  .getInTouch,
+  .contactInformation,
+  .followUs {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .formGroup label,
+  .infoText {
+    font-size: 14px;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .sendMessageButton {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .footerContent {
+    gap: 30px;
+  }
+
+  .stemtecAiFooter {
+    font-size: 22px;
+  }
+
+  .quickLinks,
+  .productsFooter,
+  .newsletter {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .footerLink,
+  .subscribeToOur,
+  .newsletterInput {
+    font-size: 14px;
+  }
+
+  .subscribeButton {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 89px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinks.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navLink {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .aboutContent {
+    flex-direction: column;
+  }
+
+  .aboutImage,
+  .aboutText {
+    flex: none;
+    width: 100%;
+  }
+
+  .aboutUs {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .leadingInnovationIn {
+    font-size: 22px;
+  }
+
+  .heroSection {
+    padding: 100px 15px 50px;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .empoweringFutureInnovators {
+    font-size: 36px;
+  }
+
+  .weBuildIntelligent {
+    font-size: 16px;
+  }
+
+  .exploreProductsButton {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .heroImageContainer {
+    justify-content: center;
+    max-width: 500px;
+  }
+
+  .backgroundRemovebgPreviewPiIcon {
+    right: 0;
+  }
+
+  .aboutCardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .aboutCard {
+    width: 90%; /* Take more width on smaller screens */
+    max-width: 350px; /* Max width for single column */
+    min-width: unset;
+    text-align: center; /* Center text in cards */
+    align-items: center;
+  }
+
+  .cardIcon {
+    margin-bottom: 5px;
+  }
+
+  .productsSection {
+    padding: 60px 15px;
+  }
+
+  .ourProducts {
+    font-size: 28px;
+  }
+
+  .exploreOurCuttingEdge {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .productCardsContainer {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .productCard {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .productImageContainer {
+    height: 180px;
+  }
+
+  .keyProductsSection {
+    padding: 60px 15px;
+  }
+
+  .ourKeyProducts {
+    font-size: 28px;
+  }
+
+  .innovativeSolutionsDesigned {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .keyProductCardsContainer {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .keyProductCard {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .technicalSpecificationsSection {
+    padding: 60px 15px;
+  }
+
+  .technicalSpecifications {
+    font-size: 28px;
+  }
+
+  .ourFlagshipStemtecX1 {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .specsGridContainer {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .specCard {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .solutionsSection {
+    padding: 60px 15px;
+  }
+
+.ourSolutions {
+    font-size: 28px;
+  }
+
+.comprehensiveSolutionsTailor {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .solutionsCardsContainer {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .solutionCard {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .solutionList li {
+    padding-left: 20px;
+  }
+
+  .contactSection {
+    padding: 60px 15px;
+  }
+
+  .contactUs {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contactForm,
+  .contactInfo {
+    max-width: 450px; /* Constrain width on mobile */
+    width: 100%;
+    padding: 25px;
+  }
+
+  .infoItem {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding: 60px 15px 30px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footerBrand,
+  .footerLinks,
+  .footerProducts,
+  .footerNewsletter {
+    min-width: unset;
+    flex: none;
+    width: 100%;
+  }
+
+  .stemtecAiFooter {
+    font-size: 20px;
+  }
+
+  .quickLinks,
+  .productsFooter,
+  .newsletter {
+    font-size: 18px;
+  }
+
+  .newsletterInputContainer {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .footerList {
+    padding-top: 10px; /* Add some space if list is centered */
+  }
+
+  .footerList li {
+    margin-bottom: 8px;
+  }
+
+  .footerLink {
+    font-size: 15px;
+  }
+
+  .footerCopyright {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .stemtecAiCopyright {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbarContainer {
+    padding: 0 10px;
+  }
+
+  .stemtecAi {
+    font-size: 18px;
+  }
+
+  .stemtechLogo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .aboutSection {
+    padding: 60px 10px;
+  }
+
+  .aboutUs {
+    font-size: 26px;
+  }
+
+  .leadingInnovationIn {
+    font-size: 20px;
+  }
+
+  .aboutImage {
+    max-width: 100%;
+  }
+
+  .heroSection {
+    padding: 80px 10px 40px;
+  }
+
+  .empoweringFutureInnovators {
+    font-size: 30px;
+  }
+
+  .weBuildIntelligent {
+    font-size: 14px;
+  }
+
+  .aboutCardsContainer {
+    margin-top: 30px;
+  }
+
+  .aboutCard {
+    padding: 15px;
+  }
+
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardDescription {
+    font-size: 12px;
+  }
+
+  .productsSection {
+    padding: 40px 10px;
+  }
+
+  .ourProducts {
+    font-size: 24px;
+  }
+
+  .exploreOurCuttingEdge {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .productCard {
+    padding: 20px;
+  }
+
+  .productTitle {
+    font-size: 18px;
+  }
+
+  .productDescription {
+    font-size: 13px;
+  }
+
+  .inquireWhatsAppButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .keyProductsSection {
+    padding: 40px 10px;
+  }
+
+  .ourKeyProducts {
+    font-size: 24px;
+  }
+
+  .innovativeSolutionsDesigned {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .keyProductCard {
+    padding: 20px;
+  }
+
+  .keyProductCardTitle {
+    font-size: 18px;
+  }
+
+  .keyProductCardDescription {
+    font-size: 13px;
+  }
+
+  .technicalSpecificationsSection {
+    padding: 40px 10px;
+  }
+
+  .technicalSpecifications {
+    font-size: 24px;
+  }
+
+  .ourFlagshipStemtecX1 {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .specCard {
+    padding: 20px;
+  }
+
+  .specTitle {
+    font-size: 18px;
+  }
+
+  .specDescription {
+    font-size: 13px;
+  }
+
+  .solutionsSection {
+    padding: 40px 10px;
+  }
+
+  .ourSolutions {
+    font-size: 24px;
+  }
+
+  .comprehensiveSolutionsTailor {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .solutionCard {
+    padding: 20px;
+  }
+
+  .solutionCardTitle {
+    font-size: 20px;
+  }
+
+  .solutionList li {
+    font-size: 14px;
+  }
+
+  .contactSection {
+    padding: 40px 10px;
+  }
+
+  .contactUs {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .contactForm,
+  .contactInfo {
+    padding: 20px;
+  }
+
+  .getInTouch,
+  .contactInformation,
+  .followUs {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .formGroup label,
+  .infoText {
+    font-size: 13px;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .sendMessageButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .infoIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .socialIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer {
+    padding: 40px 10px 20px;
+  }
+
+  .footerContent {
+    gap: 30px;
+  }
+
+  .stemtecAiFooter {
+    font-size: 18px;
+  }
+
+  .quickLinks,
+  .productsFooter,
+  .newsletter {
+    font-size: 16px;
+  }
+
+  .footerLink,
+  .subscribeToOur,
+  .newsletterInput {
+    font-size: 13px;
+  }
+
+  .subscribeButton {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+}

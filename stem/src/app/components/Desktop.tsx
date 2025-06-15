@@ -4,7 +4,6 @@ import type { NextPage } from 'next';
 import NavigationBar from './NavigationBar';
 import HeroSection from './HeroSection';
 import AboutSection from './AboutSection';
-import ServicesSection from './ServicesSection';
 import OurKeyProducts from './OurKeyProducts';
 import ProductsSection from './ProductSection';
 import TechnicalSpecificationsSection from './TechnicalSpecificationsSection';
@@ -19,7 +18,6 @@ const Desktop: NextPage = () => {
       <NavigationBar />
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
       <ProductsSection />
       <OurKeyProducts />
       <TechnicalSpecificationsSection />

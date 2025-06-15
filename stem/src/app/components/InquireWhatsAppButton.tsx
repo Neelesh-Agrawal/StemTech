@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '../styles/index.module.css';
 
 interface WhatsAppProps {
@@ -9,15 +10,16 @@ const InquireWhatsAppButton: React.FC<WhatsAppProps> = ({ text }) => {
   const handleClick = () => {
     // Replace the number with your own WhatsApp number.
     window.open(
-      'https://wa.me/+1234567890?text=Hello%20STEMTEC,%20I%20have%20a%20query.',
+      'https://wa.me/+9025116554?text=Hello%20STEMTEC,%20I%20have%20a%20query.',
       '_blank'
     );
   };
 
   return (
-    <div onClick={handleClick} className={styles.inquireOnWhatsapp}>
+    <button onClick={handleClick} className={styles.inquireWhatsAppButton}>
+      <Image src="/whatsapp.svg" alt="WhatsApp Icon" width={20} height={20} className={styles.whatsappIcon} />
       {text}
-    </div>
+    </button>
   );
 };
 

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com'; // Uncomment and configure if using EmailJS
 import styles from '../styles/index.module.css';
 
 const ContactSection = () => {
@@ -16,84 +16,102 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus('Sending message...');
 
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
-    };
+    // For demonstration, log the form data.
+    // In a real application, you would send this to your backend or EmailJS.
+    console.log('Form Data:', formData);
 
+    // Simulate API call
     try {
-      await emailjs.send(
-        'your_service_id',
-        'your_template_id',
-        templateParams,
-        'your_user_id'
-      );
-      setStatus('Message Sent!');
+      // Replace with actual EmailJS send or backend API call
+      // await emailjs.send('your_service_id', 'your_template_id', templateParams, 'your_user_id');
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network request
+      setStatus('Message Sent Successfully!');
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
-      setStatus('Error. Please try again.');
-      console.error('EmailJS error:', error);
+      setStatus('Error sending message. Please try again.');
+      console.error('Form submission error:', error);
     }
   };
 
   return (
-    <section id="contact">
-      <b className={styles.contactUs}>Contact Us</b>
-      <form className={styles.rectangleParent16} onSubmit={handleSubmit}>
-        <div className={styles.groupChild17} />
-        <b className={styles.getInTouch}>Get in Touch</b>
+    <section id="contact" className={styles.contactSection}>
+      <h2 className={styles.contactUs}>Contact Us</h2>
+      <div className={styles.contactContent}>
+        <form className={styles.contactForm} onSubmit={handleSubmit}>
+          <h3 className={styles.getInTouch}>Get in Touch</h3>
 
-        <label className={styles.name}>Name</label>
-        <input
-          className={styles.input}
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
+          <div className={styles.formGroup}>
+            <label htmlFor="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              required
+            />
+          </div>
 
-        <label className={styles.email}>Email</label>
-        <input
-          className={styles.input1}
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <div className={styles.formGroup}>
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              required
+            />
+          </div>
 
-        <label className={styles.message}>Message</label>
-        <textarea
-          className={styles.textarea}
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
+          <div className={styles.formGroup}>
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              rows={5}
+              required
+            />
+          </div>
 
-        <button className={styles.rectangleParent17} type="submit">
-          <div className={styles.groupChild18} />
-          <div className={styles.sendMessage}>Send Message</div>
-        </button>
-        {status && <p>{status}</p>}
-      </form>
+          <button className={styles.sendMessageButton} type="submit">
+            Send Message
+          </button>
+          {status && <p className={styles.formStatus}>{status}</p>}
+        </form>
 
-      <div className={styles.rectangleParent18}>
-        <div className={styles.groupChild17} />
-        <b className={styles.contactInformation}>Contact Information</b>
-        <Image className={`${styles.vectorIcon12} ${styles.greenIcon}`} width={18} height={25} alt="" src="/location.svg" />
-        <div className={styles.vitChennaiKelambakkam}>
-          VIT Chennai, Kelambakkam - Vandalur Rd, Rajan Nagar, Chennai, Tamil Nadu
+        <div className={styles.contactInfo}>
+          <h3 className={styles.contactInformation}>Contact Information</h3>
+          <div className={styles.infoItem}>
+            <Image className={`${styles.infoIcon} ${styles.greenIcon}`} width={20} height={20} alt="Location Icon" src="/location.svg" />
+            <p className={styles.infoText}>
+              VIT Chennai, Kelambakkam - Vandalur Rd, Rajan Nagar, Chennai, Tamil Nadu
+            </p>
+          </div>
+          <div className={styles.infoItem}>
+            <Image className={`${styles.infoIcon} ${styles.greenIcon}`} width={20} height={20} alt="Phone Icon" src="/call.svg" />
+            <p className={styles.infoText}>+91 9025116554</p>
+          </div>
+          <div className={styles.infoItem}>
+            <Image className={`${styles.infoIcon} ${styles.greenIcon}`} width={20} height={20} alt="Email Icon" src="/mail.svg" />
+            <p className={styles.infoText}>admin@stemtech.in</p>
+          </div>
+
+          <h3 className={styles.followUs}>Follow Us</h3>
+          <div className={styles.socialIcons}>
+            <a href="https://www.linkedin.com/company/stemtec-ai-robotics/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Image className={`${styles.socialIcon} ${styles.greenIcon}`} width={24} height={24} alt="LinkedIn Icon" src="/linkedin.svg" />
+            </a>
+            {/* Add more social media icons here as needed */}
+          </div>
         </div>
-        <Image className={`${styles.vectorIcon13} ${styles.greenIcon}`} width={16} height={16} alt="" src="/call.svg" />
-        <div className={styles.div}>+91 1234567890</div>
-        <Image className={`${styles.vectorIcon14} ${styles.greenIcon}`} width={16} height={12} alt="" src="/mail.svg" />
-        <div className={styles.adminstemtechin}>admin@stemtech.in</div>
-        <b className={styles.followUs}>Follow Us</b>
-        <Image className={`${styles.vectorIcon15} ${styles.greenIcon}`}  width={21} height={22} alt="" src="/linkedin.svg" />
       </div>
     </section>
   );
