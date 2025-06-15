@@ -1,9 +1,4 @@
 /* Reset and base styles */
-:global(*) {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Navigation Bar Styles */
 .navbar {
